@@ -16,12 +16,63 @@
 
 .custom-card
 {
-  width: 30rem;
+  width: 25rem;
   border-radius: 0.4rem;
 }
 
 .logo-container
 {
   width: 10rem;
+}
 
+#decima-forgotten-password
+{
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#decima-remember-me-label
+{
+  font-size: 13px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+#decima-remember-me
+{
+  display: none;
+}
+
+#decima-remember-me-label::before
+{
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 1rem;
+  color: transparent;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#decima-remember-me:checked + #decima-remember-me-label::before
+{
+  color: #007BFF;
 }
