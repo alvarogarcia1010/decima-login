@@ -10,15 +10,13 @@ $(document).ready(function()
   $("#btn-next").click(function(event)
   {
     event.preventDefault();
-    if($("#email-conteiner").is(":visible"))
-    {
-      $("#email-conteiner").addClass("d-none");
-      $("#user-container").removeClass("d-none");
-    }
-    else
-    {
-      alert("Enviando form.");
-    }
+
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      width: "25rem",
+    })
 
   });
 });
