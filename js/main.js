@@ -44,6 +44,8 @@ $(document).ready(function()
 
   $("#btn-next").click(function(event)
   {
+    event.preventDefault();
+
     Swal.fire({
       icon: 'error',
       title: 'Su correo y/o contraseña es incorrecto',
